@@ -40,7 +40,7 @@ userRoute.get('/emailVerify',Auth.isLogOut,userController.verifyEmail)
 userRoute.post('/existUser',Auth.isLogOut,userController.resetPassword)
 userRoute.get('/userNewOtp',Auth.isLogOut,userController.resetPasswordOtp)
 userRoute.post('/resetOtp',Auth.isLogOut,userController.verifyResetOtp)
-userRoute.post('/postPassword',Auth.isLogOut,savePassword)
+userRoute.post('/postPassword',Auth.isLogOut,userController.savePassword)
 
 
 
